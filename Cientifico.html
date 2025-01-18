@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo-Nombre Científico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .scrollable {
+            max-height: 150px; 
+            overflow-y: scroll; 
+        }
+        .alphabet-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        .alphabet-bar a {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+        .alphabet-bar a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .content-wrapper {
+            margin-top: 20px; /* Separación del contenido principal */
+        }
+        .alphabet-container {
+            margin-left: 0; /* Empieza al nivel de los filtros */
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="bg-info" style="height: 150px;">
+        <div class="row" style="height: 100%;">
+            <div class="col-12 col-md-6">
+                <img src="Imagenes/Logo.jpg" alt="Logo" style="height: 150px; margin-left: 30px;" />
+            </div>
+        </div>
+</header>
+
+<!--Nav--> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- Icono de Inicio(Casa)-->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg>
+    </a>
+    
+    <!-- Botón Colapsable -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Opciones del Menú -->
+    <div class="Contenedor position-relative">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Dentista</a>
+                </li>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Artículos
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Cientifico.html">Nombre Científico</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Comun.html">Nombre Común</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="SobreNosotros.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+      <!-- Buscador y Lupa -->
+      <form class="d-flex align-items-center position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Main Content -->
+<section class="flex-grow-1">
+    <div class="container mt-4">
+        <!-- Texto "Dentista > Nombre científico" -->
+        <div class="text-primary fw-bold mb-3">Dentista &gt; Nombre científico</div>
+
+        <!-- Barra del Abecedario -->
+        <div class="alphabet-bar">
+            <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+            <a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a>
+            <a href="#">I</a><a href="#">J</a><a href="#">K</a><a href="#">L</a>
+            <a href="#">M</a><a href="#">N</a><a href="#">O</a><a href="#">P</a>
+            <a href="#">Q</a><a href="#">R</a><a href="#">S</a><a href="#">T</a>
+            <a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a>
+            <a href="#">Y</a><a href="#">Z</a>
+        </div>
+        
+        <div class="row mt-4">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light p-3">
+                <h5 class="mb-3">Filtros</h5>
+                
+                <!-- Familia -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Familia</label>
+                    <div class="scrollable border p-2">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="familia1"><label class="form-check-label" for="familia1">Lorem ipsum 1</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="familia2"><label class="form-check-label" for="familia2">Lorem ipsum 2</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="familia3"><label class="form-check-label" for="familia3">Lorem ipsum 3</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="familia4"><label class="form-check-label" for="familia4">Lorem ipsum 4</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="familia5"><label class="form-check-label" for="familia5">Lorem ipsum 5</label></div>
+                    </div>
+                </div>
+
+                <!-- Género -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Género</label>
+                    <div class="scrollable border p-2">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="genero1"><label class="form-check-label" for="genero1">Lorem ipsum 1</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="genero2"><label class="form-check-label" for="genero2">Lorem ipsum 2</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="genero3"><label class="form-check-label" for="genero3">Lorem ipsum 3</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="genero4"><label class="form-check-label" for="genero4">Lorem ipsum 4</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="genero5"><label class="form-check-label" for="genero5">Lorem ipsum 5</label></div>
+                    </div>
+                </div>
+
+                <!-- Botón Filtrar -->
+                <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+            </div>
+            
+            <!-- Main Results -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                    <div class="col-6 mb-3"><a href="Cinetifico2.html" class="border p-3 d-block">Maxillaris Care</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3 mt-auto">
+    <p class="mb-0">© Copyright</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

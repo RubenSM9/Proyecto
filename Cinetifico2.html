@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-info" style="height: 150px;">
+            <div class="row" style="height: 100%;">
+                <div class="col-12 col-md-6">
+                    <img src="Imagenes/Logo.jpg" alt="Logo" style="height: 150px; margin-left: 30px;" />
+                </div>
+            </div>
+    </header>
+
+    <!--Nav--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Icono de Inicio(Casa)-->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg>
+        </a>
+        
+        <!-- Botón Colapsable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Opciones del Menú -->
+        <div class="Contenedor position-relative">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Dentista</a>
+                    </li>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Artículos
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Cientifico.html">Nombre Científico</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="Comun.html">Nombre Común</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="SobreNosotros.html">Quiénes somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+          <!-- Buscador y Lupa -->
+          <form class="d-flex align-items-center position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+      <!-- Contenido principal -->
+  <main class="container my-5">
+    <!-- Imagen principal -->
+    <div class="text-center">
+      <img src="Imagenes/Maxillaris.jpg" class="img-fluid rounded shadow w-25" alt="Maxillaris España - Cuidado Dental">
+    </div>
+    <!-- Descripción de la imagen -->
+    <div class="mt-4">
+      <h2 class="text-center">Periodoncia e Implantes: El desafío de mantener la salud</h2>
+      <p class="text-justify">
+        La portada de la revista <strong>Maxillaris España</strong> resalta la importancia de la periodoncia e implantes como parte del cuidado integral de la salud dental. En esta edición se destacan casos clínicos exitosos, técnicas innovadoras en implantología, y el uso de herramientas avanzadas como el microscopio quirúrgico para el diagnóstico y tratamiento. Además, presenta una perspectiva sobre cómo la tecnología está transformando las clínicas dentales modernas, fomentando la precisión y la eficiencia en los tratamientos.
+      </p>
+      <p class="text-justify">
+        Entre los temas destacados, encontramos:
+      </p>
+      <ul>
+        <li>Reconstrucción periodontal con técnicas avanzadas.</li>
+        <li>Tratamiento de recesiones linguales profundas.</li>
+        <li>Casos de éxito en implantología inmediata.</li>
+      </ul>
+      <p class="text-center">Para más información, <a href="Contacto.html" target="_blank">Contacta con nosotros</a>.</p>
+    </div>
+  </main>
+<!-- Footer -->
+ <hr>
+<footer class="bg-light text-center py-3">
+  <p class="mb-0">© Copyright</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

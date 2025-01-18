@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-info" style="height: 150px;">
+            <div class="row" style="height: 100%;">
+                <div class="col-12 col-md-6">
+                    <img src="Imagenes/Logo.jpg" alt="Logo" style="height: 150px; margin-left: 30px;" />
+                </div>
+            </div>
+    </header>
+
+    <!--Nav--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Icono de Inicio(Casa)-->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg>
+        </a>
+        
+        <!-- Botón Colapsable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Opciones del Menú -->
+        <div class="Contenedor position-relative">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Dentista</a>
+                    </li>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Artículos
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Cientifico.html">Nombre Científico</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="Comun.html">Nombre Común</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="SobreNosotros.html">Quiénes somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+          <!-- Buscador y Lupa -->
+          <form class="d-flex align-items-center position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+        <!-- Sección: Sobre Nosotros -->
+        <section class="container mt-5">
+            <h2 class="text-center text-primary mb-4">Sobre Nosotros</h2>
+            <div class="row align-items-center">
+                <!-- Imagen -->
+                <div class="col-md-6 text-center">
+                    <img src="Imagenes/yo.jpeg" class="img-fluid rounded shadow" alt="Sobre Nosotros">
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6">
+                    <p class="fs-5">
+                        En nuestra clínica dental, estamos comprometidos con proporcionar un cuidado dental de excelencia.
+                        Nuestro equipo de especialistas tiene décadas de experiencia en diferentes áreas de la odontología,
+                        incluyendo ortodoncia, estética dental y rehabilitación oral.
+                    </p>
+                    <p class="fs-5">
+                        Nos apasiona cuidar de la salud bucal de nuestros pacientes con los tratamientos más avanzados 
+                        y tecnología de punta, asegurando una experiencia cómoda y eficiente.
+                    </p>
+                    <p class="fs-5 text-primary"><strong>Nuestra misión:</strong> Devolver sonrisas saludables y llenas de confianza.</p>
+                </div>
+            </div>
+        </section>
+    
+  <!-- Contenido principal -->
+  <div class="container mt-5">
+    <!-- Sección: Dr. Juan Pérez -->
+    <section id="dr-juan">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <img src="Imagenes/Juan.webp" alt="Dr. Juan Pérez" class="rounded-circle border border-white shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="text-primary">Dr. Juan Pérez</h2>
+                        <p>El Dr. Juan Pérez es un renombrado dentista con más de 20 años de experiencia en el cuidado dental. Graduado de la Universidad Nacional de Odontología, se especializa en tratamientos avanzados de estética y rehabilitación oral.</p>
+                        <h4 class="text-secondary mt-3">Especialidades:</h4>
+                        <ul>
+                            <li>Ortodoncia y tratamientos de alineación dental.</li>
+                            <li>Implantes dentales y rehabilitación oral.</li>
+                            <li>Blanqueamiento y estética dental.</li>
+                            <li>Prevención y tratamiento de enfermedades periodontales.</li>
+                        </ul>
+                        <h4 class="text-secondary mt-3">Logros:</h4>
+                        <ul>
+                            <li>Reconocimiento por la Asociación Nacional de Odontología en 2020.</li>
+                            <li>Autor de múltiples artículos en revistas científicas dentales.</li>
+                            <li>Orador principal en congresos internacionales de odontología.</li>
+                            <li>Fundador de la clínica dental "Sonrisa Perfecta".</li>
+                        </ul>
+                        <h4 class="text-secondary mt-3">Contacto:</h4>
+                        <ul>
+                            <li><strong>Email:</strong> juanperez@clinicadental.com</li>
+                            <li><strong>Teléfono:</strong> +52 123 456 7890</li>
+                            <li><strong>Dirección:</strong> Av. Siempre Viva 123, Ciudad Dental, México</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Dra. Ana López -->
+    <section id="dr-ana">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <img src="Imagenes/Ana.webp" alt="Dra. Ana López" class="rounded-circle border border-white shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="text-primary">Dra. Ana López</h2>
+                        <p>La Dra. Ana López es una destacada dentista con más de 15 años de experiencia en el cuidado dental. Graduada de la Universidad Nacional de Odontología, se especializa en tratamientos avanzados de estética dental y rehabilitación oral.</p>
+                        <h4 class="text-secondary mt-3">Especialidades:</h4>
+                        <ul>
+                            <li>Ortodoncia y tratamientos de alineación dental.</li>
+                            <li>Implantes dentales y rehabilitación oral.</li>
+                            <li>Blanqueamiento y estética dental.</li>
+                            <li>Prevención y tratamiento de enfermedades periodontales.</li>
+                        </ul>
+                        <h4 class="text-secondary mt-3">Logros:</h4>
+                        <ul>
+                            <li>Reconocimiento por la Asociación Nacional de Odontología en 2022.</li>
+                            <li>Autora de múltiples artículos en revistas científicas dentales.</li>
+                            <li>Oradora principal en congresos internacionales de odontología.</li>
+                            <li>Fundadora de la clínica dental "Sonrisa Perfecta".</li>
+                        </ul>
+                        <h4 class="text-secondary mt-3">Contacto:</h4>
+                        <ul>
+                            <li><strong>Email:</strong> analopez@clinicadental.com</li>
+                            <li><strong>Teléfono:</strong> +52 987 654 3210</li>
+                            <li><strong>Dirección:</strong> Av. Siempre Viva 456, Ciudad Dental, México</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
+    <!-- Footer -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>© Copyright</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
